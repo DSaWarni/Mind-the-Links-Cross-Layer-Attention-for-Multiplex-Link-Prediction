@@ -1,0 +1,31 @@
+{
+  "cmd": "mell",
+  "edges": "./data_files/CS-Aarhus_multiplex/CS-Aarhus_multiplex.edges",
+  "layer_col": null,
+  "start_col": null,
+  "end_col": null,
+  "id_base": 1,
+  "has_header": false,
+  "target_layer": "1",
+  "train_val_test": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "seed": 42,
+  "device": "cuda",
+  "outdir": "./results_mell_arhus",
+  "splits": null,
+  "mask_test_in_target": false,
+  "epochs": 100,
+  "batch_size": 512,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "num_workers": 4,
+  "grad_clip": 1.0,
+  "log_every": 1,
+  "run_name": null,
+  "early_stopping": 20,
+  "csv_log": true,
+  "dim": 128
+}
