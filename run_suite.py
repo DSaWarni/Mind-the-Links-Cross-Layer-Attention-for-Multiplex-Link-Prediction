@@ -86,7 +86,7 @@ def default_grid(model: str) -> List[Dict[str, Any]]:
             {"--embed-backend": "node2vec", "--emb-dim": 256, "--n2v-p": 0.5, "--n2v-q": 2.0, "--n2v-walk-len": 80, "--n2v-walks-per-node": 20, "--sgns-window": 10, "--sgns-epochs": 1, "--sgns-batch": 8192, "--sgns-lr": 0.001, "--sgns-neg-k": 3, "--sle-layers": 3, "--sle-nhead": 8, "--sle-ff": 512, "--sle-dropout": 0.2},
             {"--embed-backend": "node2vec", "--emb-dim": 64, "--n2v-p": 2.0, "--n2v-q": 0.5, "--n2v-walk-len": 20, "--n2v-walks-per-node": 5, "--sgns-window": 5, "--sgns-epochs": 2, "--sgns-batch": 4096, "--sgns-lr": 0.0005, "--sgns-neg-k": 5, "--sle-layers": 1, "--sle-nhead": 2, "--sle-ff": 256, "--sle-dropout": 0.0},
             {"--embed-backend": "corewalk", "--emb-dim": 128, "--core-temp": 1.0, "--core-walk-len": 40, "--core-walks-per-node": 10, "--sgns-window": 10, "--sgns-epochs": 1, "--sgns-batch": 8192, "--sgns-lr": 0.001, "--sgns-neg-k": 1, "--sle-layers": 2, "--sle-nhead": 4, "--sle-ff": 512, "--sle-dropout": 0.1},
-            {"--embed-backend": "corewalk", "--emb-dim": 64, "--n2v-p": 1.0, "--n2v-q": 2.0, "--n2v-walk-len": 60, "--n2v-walks-per-node": 15, "--sgns-window": 10, "--sgns-epochs": 2, "--sgns-batch": 16384, "--sgns-lr": 0.0015, "--sgns-neg-k": 2, "--sle-layers": 2, "--sle-nhead": 4, "--sle-ff": 768, "--sle-dropout": 0.15}
+            {"--embed-backend": "corewalk", "--emb-dim": 64, "--core-temp": 0.5, "--core-walk-len": 80, "--core-walks-per-node": 20, "--sgns-window": 5, "--sgns-epochs": 2, "--sgns-batch": 4096, "--sgns-lr": 0.001, "--sgns-neg-k": 5, "--sle-layers": 2, "--sle-nhead": 4, "--sle-ff": 768, "--sle-dropout": 0.1}
         ]
     if model == "gat":
         return [
@@ -94,7 +94,7 @@ def default_grid(model: str) -> List[Dict[str, Any]]:
             {"--embed-backend": "node2vec","--emb-dim": 256,"--n2v-p": 0.5,"--n2v-q": 2.0,"--n2v-walk-len": 80,"--n2v-walks-per-node": 20,"--sgns-window": 10,"--sgns-epochs": 1,"--sgns-batch": 8192,"--sgns-lr": 0.001,"--sgns-neg-k": 3,"--gat-heads": 8,"--gat-dropout": 0.2,"--tfm-layers": 2,"--tfm-heads": 4,"--tfm-ff": 512,"--tfm-dropout": 0.1},
             {"--embed-backend": "corewalk","--emb-dim": 128,"--core-temp": 1.0,"--core-walk-len": 40,"--core-walks-per-node": 10,"--sgns-window": 10,"--sgns-epochs": 1,"--sgns-batch": 8192,"--sgns-lr": 0.001,"--sgns-neg-k": 1,"--gat-heads": 2,"--gat-dropout": 0.1,"--tfm-layers": 3,"--tfm-heads": 4,"--tfm-ff": 768,"--tfm-dropout": 0.1},
             {"--embed-backend": "node2vec","--emb-dim": 64,"--n2v-p": 2.0,"--n2v-q": 0.5,"--n2v-walk-len": 20,"--n2v-walks-per-node": 5,"--sgns-window": 5,"--sgns-epochs": 2,"--sgns-batch": 4096,"--sgns-lr": 0.0005,"--sgns-neg-k": 5,"--gat-heads": 2,"--gat-dropout": 0.0,"--tfm-layers": 1,"--tfm-heads": 2,"--tfm-ff": 256,"--tfm-dropout": 0.0},
-            {"--embed-backend": "corewalk","--emb-dim": 64,"--n2v-p": 1.0,"--n2v-q": 2.0,"--n2v-walk-len": 60,"--n2v-walks-per-node": 15,"--sgns-window": 10,"--sgns-epochs": 2,"--sgns-batch": 16384,"--sgns-lr": 0.0015,"--sgns-neg-k": 2,"--gat-heads": 4,"--gat-dropout": 0.15,"--tfm-layers": 2,"--tfm-heads": 8,"--tfm-ff": 768,"--tfm-dropout": 0.15}
+            {"--embed-backend": "corewalk","--emb-dim": 64,"--core-temp": 0.5,"--core-walk-len": 80,"--core-walks-per-node": 20,"--sgns-window": 5,"--sgns-epochs": 2,"--sgns-batch": 4096,"--sgns-lr": 0.001,"--sgns-neg-k": 5,"--gat-heads": 4,"--gat-dropout": 0.15,"--tfm-layers": 2,"--tfm-heads": 8,"--tfm-ff": 768,"--tfm-dropout": 0.0}
         ]
     if model == "mell":
         return [

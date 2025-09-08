@@ -222,7 +222,7 @@ python -m lpmp.cli hoplp --edges ./data_files/CS-Aarhus_multiplex/CS-Aarhus_mult
 python run_suite.py --model all --edges ./data_files/CKM-Physicians-Innovation_multiplex/CKM-Physicians-Innovation_multiplex.edges --seeds 42,18,45 --outroot ./results/ckm_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
 ```
 
-## for kts
+## for kts(Kapferer-Tailor-Shop)
 ```bash
 python run_suite.py --model all --edges ./data_files/Kapferer-Tailor-Shop_multiplex/Kapferer-Tailor-Shop_multiplex.edges --seeds 42,18,45 --outroot ./results/kts_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
 ```
@@ -241,4 +241,26 @@ python run_suite.py --model all --edges ./data_files/CS-Aarhus_multiplex/CS-Aarh
 
 ```bash
 python run_suite.py --model all --edges ./data_files/rattus_genetic_multiplex/rattus_genetic.edges --seeds 42,18,45 --outroot ./results/rattus_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
+```
+
+## SacchCere
+
+```bash
+python run_suite.py --model all --edges ./data_files/SacchCere_Multiplex_Genetic/sacchcere_genetic_multiplex.edges --seeds 42,18,45 --outroot ./results/sacchcere_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
+```
+
+## Pierre Auger
+
+```bash
+python run_suite.py --model all --edges ./data_files/PIERRE_AUGER_MULTIPLEX/PIERRE_AUGER_MULTIPLEX.edges --seeds 42,18,45 --outroot ./results/pierre_auger_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
+```
+
+## EU AIR
+```bash
+python run_suite.py --model all --edges ./data_files/EUAirTransportation_multiplex_unused/EUAirTransportation_multiplex.edges --seeds 42,18,45 --outroot ./results/eu_air_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
+```
+
+## Celegans
+```bash
+python run_suite.py --model all --edges ./data_files/celegans_connectome_multiplex_unused/celegans_connectome_multiplex.edges --seeds 42,18,45 --outroot ./results/celegans_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
 ```
