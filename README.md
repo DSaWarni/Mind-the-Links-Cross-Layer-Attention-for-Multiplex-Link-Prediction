@@ -218,18 +218,27 @@ python -m lpmp.cli hoplp --edges ./data_files/CS-Aarhus_multiplex/CS-Aarhus_mult
 ### To Run full grid suit 
 
 ## for ckm
-python run_suite.py --model all --edges ./data_files/CKM-Physicians-Innovation_multiplex/CKM-Physicians-Innovation_multiplex.edges --seeds 42,112,17,1,45 --outroot ./results/ckm_result --epochs 200 --batch-size 512 --early-stopping 10 --csv-log
+```bash
+python run_suite.py --model all --edges ./data_files/CKM-Physicians-Innovation_multiplex/CKM-Physicians-Innovation_multiplex.edges --seeds 42,18,45 --outroot ./results/ckm_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
+```
 
 ## for kts
-python run_suite.py --model all --edges ./data_files/Kapferer-Tailor-Shop_multiplex/Kapferer-Tailor-Shop_multiplex.edges --seeds 42,112,17,1,45 --outroot ./results/kts_result --epochs 200 --batch-size 512 --early-stopping 10 --csv-log
+```bash
+python run_suite.py --model all --edges ./data_files/Kapferer-Tailor-Shop_multiplex/Kapferer-Tailor-Shop_multiplex.edges --seeds 42,18,45 --outroot ./results/kts_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
+```
 
 ## for vicker
-python run_suite.py --model all --edges ./data_files/Vickers-Chan-7thGraders_multiplex/Vickers-Chan-7thGraders_multiplex.edges --seeds 42,112,17,1,45 --outroot ./results/vicker_result --epochs 200 --batch-size 512 --early-stopping 10 --csv-log
+```bash
+python run_suite.py --model all --edges ./data_files/Vickers-Chan-7thGraders_multiplex/Vickers-Chan-7thGraders_multiplex.edges --seeds 42,18,45 --outroot ./results/vicker_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
+```
 
 ## cs aarhus
-
-python run_suite.py --model all --edges ./data_files/CS-Aarhus_multiplex/CS-Aarhus_multiplex.edges --seeds 42,112,17,1,45 --outroot ./results/cs_aarhus_result --epochs 200 --batch-size 512 --early-stopping 10 --csv-log
+```bash
+python run_suite.py --model all --edges ./data_files/CS-Aarhus_multiplex/CS-Aarhus_multiplex.edges --seeds 42,18,45 --outroot ./results/cs_aarhus_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
+```
 
 ## Rattus
 
-python run_suite.py --model all --edges ./data_files/rattus_genetic_multiplex/rattus_genetic.edges --seeds 42,112,17,1,45 --outroot ./results/rattus_result --epochs 200 --batch-size 512 --early-stopping 10 --csv-log
+```bash
+python run_suite.py --model all --edges ./data_files/rattus_genetic_multiplex/rattus_genetic.edges --seeds 42,18,45 --outroot ./results/rattus_result --epochs 200 --batch-size 512 --early-stopping 5 --csv-log
+```
