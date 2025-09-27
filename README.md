@@ -3,7 +3,7 @@
 This repository implements **link prediction in multiplex networks** using:
 - **SLE Transformer**
 - **GAT Transformer**
-- Faithful baselines: **MeLL**, **RMNE**, and **HOPLP-MUL**.
+- baselines: **MeLL**, **RMNE**, and **HOPLP-MUL**.
 
 All models support training, validation, and testing with **patience-based early stopping** for fair comparison.
 
